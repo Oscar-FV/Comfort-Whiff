@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>ComfortWhiff</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                tailwind.config = {
+                    theme: {
+                        extend: {
+                            fontFamily: {
+                                'sans': ['"Poppins"', 'sans-serif'],
+                            },
+                        }
+                    }
+                };
+            });
+        </script>
+        <title>ComfortWhiff</title>
+    </head>
+    
 <body>
 
     <nav class="sticky top-0 p-3 shadow-md z-50 bg-white">
@@ -14,12 +31,12 @@
     
             <a href="#main"><img src="assets/logo2.png" alt="Large Logo" class="h-[3rem] w-[15rem] mx-2 mb-2 sm:mb-0"></a>
         
-            <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 mr-6">
-                <li><a href="#esencias">Esencias</a></li>
-                <li><a href="#mision">Misión</a></li>
-                <li><a href="#vision">Visión</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#responsabilidad-social">Responsabilidad Social</a></li>
+            <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 mr-6 text-[#66656D]">
+                <li class=" px-2 py-1 hover:bg-[#CEC3F4] rounded-lg"><a href="#esencias">Esencias</a></li>
+                <li class=" px-2 py-1 hover:bg-[#CEC3F4] rounded-lg"><a href="#mision">Misión</a></li>
+                <li class=" px-2 py-1 hover:bg-[#CEC3F4] rounded-lg"><a href="#vision">Visión</a></li>
+                <li class=" px-2 py-1 hover:bg-[#CEC3F4] rounded-lg"><a href="#valores">Valores</a></li>
+                <li class=" px-2 py-1 hover:bg-[#CEC3F4] rounded-lg"><a href="#responsabilidad-social">Responsabilidad Social</a></li>
             </ul>
         
         </div>
@@ -28,9 +45,9 @@
 
     <section id="main" class="bg-[#CEC3F4] lg:h-[50vh] flex flex-col lg:flex-row items-center justify-between p-4 lg:p-10">
 
-        <div class="m-4 lg:m-5 p-4 lg:p-5 text-center lg:text-left lg:-mb-6 lg:mr-5">
-            <h2 class="text-[3vw] lg:text-[2.5vw] font-medium">Vive Tranquilo Y Feliz Con</h2>
-            <h1 class="text-[6vw] lg:text-[5vw] font-bold">ComfortWhiff</h1>
+        <div class="m-4 lg:m-5 p-4 lg:p-5 text-center lg:text-left lg:-mb-5 lg:mr-5">
+            <h2 class="text-[3vw] lg:text-[2vw] font-medium lg:-mb-6 text-white">Vive Tranquilo Y Feliz Con</h2>
+            <h1 class="text-[6vw] lg:text-[5vw] font-bold text-[#66656D]">ComfortWhiff</h1>
         </div>
     
         <div class="flex items-center justify-center m-4 lg:m-5 p-4 lg:p-5 bg-white rounded-md shadow-md lg:h-[100%] lg:block hidden">
@@ -56,7 +73,7 @@
     </section>
 
     <section id="esencias" class=" p-4 lg:p-10 ">
-        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5"> Esencias </h1>
+        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5 text-[#66656D]"> Esencias </h1>
         
         <div class="flex justify-around items-center text-[3vw] lg:text-[2vw]">
 
@@ -80,7 +97,7 @@
             </div>
 
             <div>
-                <ul class="pr-16 space-y-6">
+                <ul class="pr-16 space-y-6 text-[#9079E5] text-center">
                     <li>Lavanda</li>
                     <li>Lemon Grass</li>
                     <li>Eucalyptus</li>
@@ -93,7 +110,7 @@
     </section>
 
     <section id="mision" class=" p-4 lg:p-10 ">
-        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5"> Misión </h1>
+        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5 text-[#66656D]"> Misión </h1>
         
         <div class="flex justify-around items-center text-[3vw] lg:text-[2vw]">
 
@@ -111,7 +128,7 @@
 
 
     <section id="vision" class=" p-4 lg:p-10 ">
-        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5"> Visión </h1>
+        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5 text-[#66656D]"> Visión </h1>
         
         <div class="flex justify-around items-center text-[3vw] lg:text-[2vw]">
 
@@ -128,7 +145,7 @@
     </section>
 
     <section id="valores" class=" p-4 lg:p-10 ">
-        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5"> Valores </h1>
+        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5 text-[#66656D]"> Valores </h1>
         
         <div class="flex justify-around items-center text-[3vw] lg:text-[2vw]">
 
@@ -188,7 +205,7 @@
     </section>
     
     <section id="responsabilidad-social" class=" p-4 lg:p-10 ">
-        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5"> Responsabilidad Social </h1>
+        <h1 class="text-[6vw] lg:text-[5vw] font-medium mb-5 text-[#66656D]"> Responsabilidad Social </h1>
         
         <div class="flex justify-around items-center text-[3vw] lg:text-[2vw]">
 
